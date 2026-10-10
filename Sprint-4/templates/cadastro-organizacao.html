@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prisma</title>
+<link href="../static/css/organizaçao.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<main class="tela" id="organizacao">
+  <section class="card">
+    <button class="back" data-go="cadastro" aria-label="Voltar"><svg width="26" height="26"><use href="#chev"/></svg></button>
+    <img class="logo" src="../static/img/logoprisma2.png" alt="Logo Prisma">
+    <h1>Cadastro Organização</h1>
+    <form data-next="home" data-toast="Conta criada! Bem-vindo(a), {nome}." data-demo="Conta de organização criada.">
+      <input type="text" name="nome" placeholder="Nome da organização" required>
+      <input type="email" name="email" placeholder="Email da organização" required>
+      <input type="password" name="senha" placeholder="Crie uma senha" autocomplete="new-password" required>
+      <fieldset>
+        <legend>A organização faz parte da PUC?</legend>
+        <div class="sim-nao">
+          <input type="radio" name="puc" id="puc-sim" value="sim" checked>
+          <label for="puc-sim">Sim</label>
+          <input type="radio" name="puc" id="puc-nao" value="nao">
+          <label for="puc-nao">Não</label>
+        </div>
+      </fieldset>
+      <button class="btn clay" type="submit">Criar conta</button>
+    </form>
+  </section>
+</main>
